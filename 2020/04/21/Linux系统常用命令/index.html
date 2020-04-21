@@ -6,15 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>KsirZz&#39;s 博客</title>
+  <title>Linux系统常用命令及简单问题 | KsirZz&#39;s 博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="KsirZz&#39;s 博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="常用基础命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux系统常用命令及简单问题">
+<meta property="og:url" content="http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="KsirZz&#39;s 博客">
+<meta property="og:description" content="常用基础命令">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/aaa1.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/aaa2.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/aaa3.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/aaa4.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/crt1.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/crt2.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/crt3.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/crt4.png">
+<meta property="article:published_time" content="2020-04-21T13:46:52.000Z">
+<meta property="article:modified_time" content="2020-04-21T14:54:40.833Z">
 <meta property="article:author" content="KsirZz">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/aaa1.png">
   
     <link rel="alternative" href="/atom.xml" title="KsirZz&#39;s 博客" type="application/atom+xml">
   
@@ -156,20 +169,26 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Linux系统常用命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Linux系统常用命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux系统常用命令及简单问题</a>
+    <h1 class="article-title" itemprop="name">
+      Linux系统常用命令及简单问题
     </h1>
   
 
 	<!--显示阅读次数-->
+	
+  		<br/>
+  		<a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  		<span class="icon-sort"></span>
+  		<span id="busuanzi_container_page_pv"  style="color:#ef7522;font-size:14px;">
+            			阅读数: <span id="busuanzi_value_page_pv"></span>次  &nbsp;&nbsp;
+  		</span>
+  		</a>
 	
 	<!--显示阅读次数完毕-->
         
@@ -181,21 +200,173 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="常用基础命令"><a href="#常用基础命令" class="headerlink" title="常用基础命令"></a>常用基础命令</h3>
-        
-          <a class="article-more-a" href="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#more">more >></a>
-        
+        <h3 id="常用基础命令"><a href="#常用基础命令" class="headerlink" title="常用基础命令"></a>常用基础命令</h3><a id="more"></a>
+<blockquote>
+<p>man                 //查看命令解释<br>pwd                 //查看当前路径<br>whoami              //显示当前登录用户<br>ls                  //按照时间先后顺序查询文件列表<br>ls -a                //查看隐藏文件<br>cd                  //进入默认home目录<br>gzip/gunzip         //压缩、解压文件<br>tar                 //打包、解包<br>cp                  //拷贝一个完整目录,拷贝目录记得带-r选项<br>mv                  //move的缩写,移动文件、重命名文件<br>rm                  //删除文件、删除目录<br>rm -rf              //删除文件夹<br>rm -f log*          //删除全部log开头的文件（log1，log2也可以删除）<br>rm -f *             //删除所有文件<br>rm -rf test*        //删除全部test开头的文件及文件夹（test1，test2，test.java,test.class也可以删除）<br>echo 命令           //创建文件，可以写入东西<br>ln                  //创建连接<br>mkdir               //创建目录<br>cat、more           //查看文件（区别）<br>find                //查找文件<br>tail                //查看日志更新</p>
+</blockquote>
+<blockquote>
+<p>一个点，当前目录，两个点，上级目录;当前目录是/home/hadoop/test，要回到/目录，cd命令：cd ../../..<br>cp拷贝；拷贝整个目录需要-r选项：cp -r test test2</p>
+</blockquote>
+<blockquote>
+<p>find ./* -name “log*”                              //查找当前目录下的所有目录或文件（名字含log的）<br>find ./* -name “log*” | xargs ls -l                 //查看所有查找到的文件详<br>find ./* -user hadoop                               //根据用户查找<br>find ./* -user hadoop -name “log*”                  //查找hadoop用户log开头的文件<br>find ./* -user hadoop -name “log*” | xargs ls -l</p>
+</blockquote>
+<blockquote>
+<p>tail 查看文件末尾，tail -f 查看文件末尾新增内容,tail -n查看文件末尾n行内容<br>wc -l log.txt  查看文本文件的行数<br>cat log1.txt   显示文件的全部内容<br>more 分页/逐行查看文本文件内容</p>
+</blockquote>
+<blockquote>
+<p>systemctl stop firewalld   //关闭防火墙<br>systemctl disable firewalld</p>
+</blockquote>
+<blockquote>
+<p>运行df -h查看linux下的文件系统<br>top命令：任务管理器</p>
+</blockquote>
+<h3 id="读写执行权限的添加、查看、取消及所有、组、用户的权限操作"><a href="#读写执行权限的添加、查看、取消及所有、组、用户的权限操作" class="headerlink" title="读写执行权限的添加、查看、取消及所有、组、用户的权限操作"></a>读写执行权限的添加、查看、取消及所有、组、用户的权限操作</h3><ol>
+<li>创建文件log<blockquote>
+<p>echo “aaaaaaa” &gt;&gt; log</p>
+</blockquote>
+</li>
+<li>创建组/删除组/查看组文件<blockquote>
+<p>groupadd admin<br>groupdel admin<br>cat /etc/group</p>
+</blockquote>
+</li>
+<li>创建用户<blockquote>
+<p>useradd -g admin dev<br>su - dev 切换到dev用户<br>passwd dev 设置dev的密码</p>
+</blockquote>
+</li>
+<li>修改用户组<blockquote>
+<p>usermod -g root dev<br>gpasswd -a dev admin<br>gpasswd -d dev admin<br>groups dev</p>
+</blockquote>
+</li>
+<li>修改文件用户<blockquote>
+<p>chown -R hadoop test</p>
+</blockquote>
+</li>
+<li>修改文件组<blockquote>
+<p>chgrp  admin -R  test</p>
+</blockquote>
+</li>
+<li>添加log读写执行权限<blockquote>
+<p>chmod +r log<br>chmod +w log<br>chmod +x log<br>o 其他 g组 u用户<br>chmod o+r log<br>ls -l命令查看</p>
+</blockquote>
+</li>
+<li>取消log读写执行权限<blockquote>
+<p>chmod -r log<br>chmod -w log<br>chmod -x log<br>o 其他 g组 u用户<br>chmod o-r log<br>ls -l命令查看</p>
+</blockquote>
+<h3 id="linux的文件打包、压缩、解压等"><a href="#linux的文件打包、压缩、解压等" class="headerlink" title="linux的文件打包、压缩、解压等"></a>linux的文件打包、压缩、解压等</h3></li>
+<li>创建文件和文件夹<blockquote>
+<p>mkdir test<br>cd test<br>echo  “aaaaaa” &gt;&gt; log.txt </p>
+</blockquote>
+</li>
+<li>打包解包<blockquote>
+<p>tar -cvf test.tar test<br>(如果对一个目录进行打包，压缩，那么就直接用tar -zcvf,如果单纯的打包就用tar -cvf)<br>mkdir test2<br>cp test.tar test2<br>cd test2<br>tar -xvf test.tar<br>ls -l命令查看</p>
+</blockquote>
+</li>
+<li>gz压缩和解压缩<blockquote>
+<p>gzip test.tar<br>cd test2<br>rm -rf *<br>mv ../test.tar.gz<br>gunzip test.tar.gz<br>ls -l<br>tar -xvf test.tar<br>ls -l </p>
+</blockquote>
+</li>
+<li>tar打包和压缩<blockquote>
+<p>rm -rf *.gz<br>rm -rf *.tar<br>tar -zcvf test.tar.gz test<br>mv test.tar.gz test2<br>cd test2<br>gunzip test.tar.gz<br>ls -l<br>tar -xvf test.tar<br>ls -l </p>
+</blockquote>
+</li>
+<li>zip打包和压缩<blockquote>
+<p>zip -r test.zip test<br>cd test2<br>rm -rf *<br>mv ../test.zip .<br>unzip test.zip</p>
+</blockquote>
+<h3 id="文本编辑命令"><a href="#文本编辑命令" class="headerlink" title="文本编辑命令"></a>文本编辑命令</h3><blockquote>
+<p>创建文件:echo “zzzzzzzzz” &gt;&gt; log.txt<br>用vi log.txt打开<br>输入模式和命令模式的切换是i和esc<br>输入冒号: 冒号后面就可以输入命令了<br>q退出<br>q!强制退出<br>w保存<br>wq保存退出<br>编辑命令i<br>删除命令：x往后删，X往前删<br>整行删除dd<br>shift + a 进入输入模式，光标定位在行尾<br>进入命令行，输入:set nu  在左侧，显示行号<br>命令行模式下输入:$  光标就定位在最后一行<br>命令行模式下输入:0/n  定位到第一/n行<br>命令模式下连续按两次g  快捷定位到第一行<br>命令模式下shift + g   快速定位到末尾行<br>命令行模式下输入:/abcd 查找abcd    按n把光标顺序定位在满足查找条件abcd的地方</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="文件上传和下载"><a href="#文件上传和下载" class="headerlink" title="文件上传和下载"></a>文件上传和下载</h3><p>打开CRT登录Linux，如下图：</p>
+<div align="center">
+    <img src="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/aaa1.png" width="30%">
+</div>
+打开sftp，如下图：
+<div align="center">
+    <img src="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/aaa2.png" width="30%">
+</div>
+出现sftp的连接tab页，这时就建立了本地PC和linux服务器的文件传连接，如下图：
+<div align="center">
+    <img src="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/aaa3.png" width="30%">
+</div>
+进入服务器的/home/hadoop目录，本地进入d盘根目录，通过get log把log文件下载到d盘根目录，通过put命令把d盘根目录的log.txt上传到服务器，如下图：
+<div align="center">
+    <img src="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/aaa4.png" width="30%">
+</div>
+
+<h3 id="CRT乱码问题"><a href="#CRT乱码问题" class="headerlink" title="CRT乱码问题"></a>CRT乱码问题</h3><p>在CRT上执行ls命令，出现乱码，如下图：</p>
+<div align="center">
+    <img src="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/crt1.png" width="30%">
+</div>
+这时需要修改CRT配置，打开菜单，选择“会话选项”，如下图：
+<div align="center">
+    <img src="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/crt2.png" width="30%">
+</div>
+在“会话选项”对话框，选择字符编码“UTF-8”，如下图：
+<div align="center">
+    <img src="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/crt3.png" width="30%">
+</div>
+配置完成后，在CRT再次执行ls命令，如下图：
+<div align="center">
+    <img src="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/crt4.png" width="30%">
+</div>
+能正确显示中文。
       
 
       <!-- 增加版权声明 -->
 
         
         
-        <div class="declare" hidden="hidden"></div>
+        <div class="declare">
+          <strong>本文作者：</strong>
+          
+            KsirZz
+          
+          <br>
+         
+          <strong>版权声明：</strong>
+          本作品采用
+          <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+          进行许可。转载请注明出处！
+          
+            <br>
+            <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+          
+        </div>
         
 
       <!-- 增加版权声明结束 -->
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃肉<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/zfb.JPG">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wx.JPG">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -204,16 +375,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/21/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/16/Android%E5%BC%80%E5%8F%91-Sharedpreferences%E5%AD%98%E5%82%A8%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Android开发:Sharedpreferences存储实现用户登录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -228,321 +458,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Android开发-Sharedpreferences存储实现用户登录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/Android%E5%BC%80%E5%8F%91-Sharedpreferences%E5%AD%98%E5%82%A8%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/">Android开发:Sharedpreferences存储实现用户登录</a>
-    </h1>
-  
-
-	<!--显示阅读次数-->
-	
-	<!--显示阅读次数完毕-->
-        
-        <a href="/2020/04/16/Android%E5%BC%80%E5%8F%91-Sharedpreferences%E5%AD%98%E5%82%A8%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/" class="archive-article-date">
-  	<time datetime="2020-04-16T15:00:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2>
-        
-          <a class="article-more-a" href="/2020/04/16/Android%E5%BC%80%E5%8F%91-Sharedpreferences%E5%AD%98%E5%82%A8%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/#more">more >></a>
-        
-      
-
-      <!-- 增加版权声明 -->
-
-        
-        
-        <div class="declare" hidden="hidden"></div>
-        
-
-      <!-- 增加版权声明结束 -->
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/Android%E5%BC%80%E5%8F%91-Sharedpreferences%E5%AD%98%E5%82%A8%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#常用基础命令"><span class="toc-number">1.</span> <span class="toc-text">常用基础命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#读写执行权限的添加、查看、取消及所有、组、用户的权限操作"><span class="toc-number">2.</span> <span class="toc-text">读写执行权限的添加、查看、取消及所有、组、用户的权限操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#linux的文件打包、压缩、解压等"><span class="toc-number">3.</span> <span class="toc-text">linux的文件打包、压缩、解压等</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文本编辑命令"><span class="toc-number">4.</span> <span class="toc-text">文本编辑命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件上传和下载"><span class="toc-number">5.</span> <span class="toc-text">文件上传和下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CRT乱码问题"><span class="toc-number">6.</span> <span class="toc-text">CRT乱码问题</span></a></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
   
-    <article id="post-Android开发：帧动画、补间动画、属性动画的实现" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/13/Android%E5%BC%80%E5%8F%91%EF%BC%9A%E5%B8%A7%E5%8A%A8%E7%94%BB%E3%80%81%E8%A1%A5%E9%97%B4%E5%8A%A8%E7%94%BB%E3%80%81%E5%B1%9E%E6%80%A7%E5%8A%A8%E7%94%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/">Android开发：帧动画、补间动画、属性动画的实现</a>
-    </h1>
   
 
-	<!--显示阅读次数-->
-	
-	<!--显示阅读次数完毕-->
-        
-        <a href="/2020/04/13/Android%E5%BC%80%E5%8F%91%EF%BC%9A%E5%B8%A7%E5%8A%A8%E7%94%BB%E3%80%81%E8%A1%A5%E9%97%B4%E5%8A%A8%E7%94%BB%E3%80%81%E5%B1%9E%E6%80%A7%E5%8A%A8%E7%94%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" class="archive-article-date">
-  	<time datetime="2020-04-13T06:14:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="帧动画的实现"><a href="#帧动画的实现" class="headerlink" title="帧动画的实现"></a>帧动画的实现</h2>
-        
-          <a class="article-more-a" href="/2020/04/13/Android%E5%BC%80%E5%8F%91%EF%BC%9A%E5%B8%A7%E5%8A%A8%E7%94%BB%E3%80%81%E8%A1%A5%E9%97%B4%E5%8A%A8%E7%94%BB%E3%80%81%E5%B1%9E%E6%80%A7%E5%8A%A8%E7%94%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/#more">more >></a>
-        
-      
-
-      <!-- 增加版权声明 -->
-
-        
-        
-        <div class="declare" hidden="hidden"></div>
-        
-
-      <!-- 增加版权声明结束 -->
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/13/Android%E5%BC%80%E5%8F%91%EF%BC%9A%E5%B8%A7%E5%8A%A8%E7%94%BB%E3%80%81%E8%A1%A5%E9%97%B4%E5%8A%A8%E7%94%BB%E3%80%81%E5%B1%9E%E6%80%A7%E5%8A%A8%E7%94%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Android开发-实现微信静态Activity间切换" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/07/Android%E5%BC%80%E5%8F%91-%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E9%9D%99%E6%80%81Activity%E9%97%B4%E5%88%87%E6%8D%A2/">Android开发:实现微信静态Activity间切换</a>
-    </h1>
   
 
-	<!--显示阅读次数-->
-	
-	<!--显示阅读次数完毕-->
-        
-        <a href="/2020/04/07/Android%E5%BC%80%E5%8F%91-%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E9%9D%99%E6%80%81Activity%E9%97%B4%E5%88%87%E6%8D%A2/" class="archive-article-date">
-  	<time datetime="2020-04-07T06:22:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><hr>
-        
-          <a class="article-more-a" href="/2020/04/07/Android%E5%BC%80%E5%8F%91-%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E9%9D%99%E6%80%81Activity%E9%97%B4%E5%88%87%E6%8D%A2/#more">more >></a>
-        
-      
-
-      <!-- 增加版权声明 -->
-
-        
-        
-        <div class="declare" hidden="hidden"></div>
-        
-
-      <!-- 增加版权声明结束 -->
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/07/Android%E5%BC%80%E5%8F%91-%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E9%9D%99%E6%80%81Activity%E9%97%B4%E5%88%87%E6%8D%A2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
   
 
-	<!--显示阅读次数-->
-	
-	<!--显示阅读次数完毕-->
-        
-        <a href="/2020/04/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-04-06T13:01:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2>
-        
-          <a class="article-more-a" href="/2020/04/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/#more">more >></a>
-        
-      
-
-      <!-- 增加版权声明 -->
-
-        
-        
-        <div class="declare" hidden="hidden"></div>
-        
-
-      <!-- 增加版权声明结束 -->
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -569,8 +510,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
